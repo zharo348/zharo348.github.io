@@ -256,16 +256,6 @@ section li::before {
   text-align: center;
 }
 
-/* Footer */
-footer {
-  background-color: var(--header-bg);
-  padding: 2rem 0;
-  text-align: center;
-  margin-top: 4rem;
-  border-top: 1px solid var(--accent);
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
