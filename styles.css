@@ -576,6 +576,21 @@ section li::before {
     font-weight: 500;
 }
 
+/* Footer */
+footer {
+  background-color: var(--header-bg);
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 4rem;
+  border-top: 1px solid var(--accent);
+}
+
+footer p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -679,4 +694,9 @@ section li::before {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    footer {
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
 }
