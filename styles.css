@@ -52,21 +52,22 @@ nav {
   transition: color 0.3s ease;
 }
 
+/* Navigation Updates */
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
 }
 
 nav ul a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav ul a:hover {
-  color: var(--primary);
+    color: var(--primary);
 }
 
 /* Hero Section */
@@ -151,8 +152,37 @@ h2 {
 
 .alt-section {
   background-color: white;
-  margin: 2rem -2rem;
-  padding: 4rem 2rem;
+  margin: 2rem 0;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.alt-section h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.alt-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alt-section li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.alt-section li::before {
+  content: "•";
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 section ul {
@@ -278,6 +308,62 @@ section li::before {
   margin-bottom: 0;
 }
 
+/* Awards Page */
+.awards-section,
+.performances-section,
+.contact-section,
+.media-section {
+    padding: 4rem 0;
+}
+
+.award-item,
+.performance-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Form */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+}
+
+/* Media Gallery */
+.video-gallery,
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.video-item iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+}
+
 /* Footer */
 footer {
   background-color: var(--header-bg);
@@ -345,4 +431,22 @@ footer p {
   .bio-content p {
     font-size: 1rem;
   }
+
+  .alt-section {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+  }
+  
+  .alt-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
