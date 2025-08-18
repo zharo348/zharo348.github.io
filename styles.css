@@ -256,6 +256,28 @@ section li::before {
   text-align: center;
 }
 
+/* Biography Section Styling */
+.biography {
+  padding: 4rem 0;
+  background-color: var(--background);
+}
+
+.bio-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.bio-content p {
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.bio-content p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -298,5 +320,13 @@ section li::before {
 
   .personal-gallery img {
     height: 200px;
+  }
+
+  .biography {
+    padding: 2rem 0;
+  }
+  
+  .bio-content p {
+    font-size: 1rem;
   }
 }
